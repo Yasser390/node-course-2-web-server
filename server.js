@@ -36,6 +36,12 @@ app.get('/', (req,res) =>{
     });
 });
 
+app.get('/projects', (req,res) =>{
+    res.render('projects.hbs',{
+        pageTitle: 'Projects Page',
+        message: 'Here is our list of projects ^_^'
+    });
+});
 
 
 app.get('/about',(req,res) =>{
